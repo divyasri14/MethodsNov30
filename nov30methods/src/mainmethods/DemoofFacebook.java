@@ -13,7 +13,7 @@ public static void main (String[]args) {
 	
     fl.getwindowtitle();
      
-//     fl.close();
+     fl.close();
      
      
 
