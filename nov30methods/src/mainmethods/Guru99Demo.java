@@ -9,8 +9,14 @@ public static void main (String[]args) {
 	 GL. invokebrowser ();
 	 GL.getwindowtitle();
 	 GL.Guru99login("mngr166186","tyredet");
+	 
 	 GL.newcustomer();
 	 
+	 String cid =GL.getCustomeid();
+	 System.out.println("customerid is:" +cid);
+			 
+	 
+	 GL.EditCustomer();
 	 
 	 
 	 

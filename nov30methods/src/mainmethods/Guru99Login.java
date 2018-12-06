@@ -73,13 +73,28 @@ package mainmethods;
 			driver.findElement(By.name("state")).sendKeys("Karnataka");
 			driver.findElement(By.name("pinno")).sendKeys("123456");
 			driver.findElement(By.name("telephoneno")).sendKeys("231456");
-			driver.findElement(By.name("emailid")).sendKeys("qq124@gmail.com");
+			driver.findElement(By.name("emailid")).sendKeys("dd124@gmail.com");
 			driver.findElement(By.name("password")).sendKeys("1234");
 			driver.findElement(By.name("sub")).click();
+	
+			
 		
 		}
 		
+		public String getCustomeid(){
+			
+			return driver.findElement(By.xpath("//table[@id='customer']/tbody/tr[4]/td[2]")).getText();
+			
+			
+		}
 		
+		public void EditCustomer() {
+			
+			driver.findElement(By.linkText("Edit Customer")).click();
+			driver.findElement(By.name("cusid")).sendKeys("+cid");
+			
+			
+		}
 		
 		public void close() {			
 		//Close the current active page	
