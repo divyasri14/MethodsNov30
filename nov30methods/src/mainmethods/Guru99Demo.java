@@ -16,7 +16,7 @@ public static void main (String[]args) {
 	 System.out.println("customerid is:" +cid);
 			 
 	 
-	 GL.EditCustomer();
+	 GL.addaccount(cid);
 	 
 	 
 	 

@@ -4,7 +4,9 @@ package mainmethods;
 	import java.awt.Dimension;
 
 	import org.openqa.selenium.By;
-	import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 	
 	public class Guru99Login {
 
@@ -63,6 +65,8 @@ package mainmethods;
 			
 			driver.findElement(By.linkText("New Customer")).click();
 			
+			String email = "vv"+System.currentTimeMillis()+"@gamil.com";
+			
 			
 			
 			driver.findElement(By.name("name")).sendKeys("divya");
@@ -73,7 +77,7 @@ package mainmethods;
 			driver.findElement(By.name("state")).sendKeys("Karnataka");
 			driver.findElement(By.name("pinno")).sendKeys("123456");
 			driver.findElement(By.name("telephoneno")).sendKeys("231456");
-			driver.findElement(By.name("emailid")).sendKeys("dd124@gmail.com");
+			driver.findElement(By.name("emailid")).sendKeys(email);
 			driver.findElement(By.name("password")).sendKeys("1234");
 			driver.findElement(By.name("sub")).click();
 	
@@ -88,12 +92,30 @@ package mainmethods;
 			
 		}
 		
-		public void EditCustomer() {
+		public void addaccount(String Customeid) {
 			
-			driver.findElement(By.linkText("Edit Customer")).click();
-			driver.findElement(By.name("cusid")).sendKeys("+cid");
+			driver.findElement(By.linkText("New Account")).click();
+			driver.findElement(By.name("cusid")).sendKeys(Customeid);
 			
 			
+	//to select from drop down button.		
+			 WebElement dropdownel =  driver.findElement(By.name("selaccount"));	
+			 Select selectAccount = new Select(dropdownel);
+			 
+			 selectAccount.selectByVisibleText("Savings");
+			 
+			 driver.findElement(By.name("inideposit")).sendKeys("1000");
+			 
+
+			 driver.findElement(By.name("button2")).click();
+			 
+			 System.out.println(selectAccount.isMultiple());
+			 
+			 
+			System.out.println(selectAccount.getWrappedElement());
+			
+			
+
 		}
 		
 		public void close() {			
