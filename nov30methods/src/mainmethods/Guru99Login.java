@@ -3,7 +3,8 @@ package mainmethods;
 
 	import java.awt.Dimension;
 
-	import org.openqa.selenium.By;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -116,6 +117,17 @@ import org.openqa.selenium.support.ui.Select;
 			
 			
 
+		}
+		
+		public void logOut() {
+			
+			driver.findElement(By.linkText("Log out")).click();
+//			Alert alert = driver.switchTo().alert();
+//			System.out.println(alert.getText());
+//			alert.accept();
+			
+			
+			
 		}
 		
 		public void close() {			
