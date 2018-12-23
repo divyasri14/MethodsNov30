@@ -66,8 +66,8 @@ public int getcount() {
 public  void printalltest() {
 	//enhanced for loop syn for(WebElement tempvarible :allink) and in input some doesnot have linktest those are images
 	
-	for(WebElement link :allink) {
-		System.out.println("Link of text:  " + link.getText()+"hrefis" + link.getAttribute("href"));
+	for(WebElement List :allink) {
+		System.out.println("Link of text:  " + List.getText()+"hrefis" + List.getAttribute("id"));
 		
 	}
 	

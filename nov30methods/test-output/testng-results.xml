@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="45135" started-at="2018-12-23T12:16:09Z" finished-at="2018-12-23T12:16:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="45135" started-at="2018-12-23T12:16:09Z" finished-at="2018-12-23T12:16:54Z">
+      <class name="mainmethods.guru99Testng">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:mainmethods.guru99Testng@6d00a15d]" name="invokeBrowser" is-config="true" duration-ms="43744" started-at="2018-12-23T12:16:09Z" finished-at="2018-12-23T12:16:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="veriftTitle()[pri:0, instance:mainmethods.guru99Testng@6d00a15d]" name="veriftTitle" duration-ms="499" started-at="2018-12-23T12:16:53Z" finished-at="2018-12-23T12:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriftTitle -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:mainmethods.guru99Testng@6d00a15d]" name="closeBrowser" is-config="true" duration-ms="798" started-at="2018-12-23T12:16:54Z" finished-at="2018-12-23T12:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- mainmethods.guru99Testng -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
