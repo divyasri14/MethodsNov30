@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [guru99new]">
+  <test thread-count="5" name="classexecution1(failed)">
+    <parameter name="password" value="tyredet"/>
+    <parameter name="Browsertype" value="chrome"/>
+    <parameter name="userid" value="mngr166186"/>
+    <classes>
+      <class name="TestNGpgm.guru99MultipleBrowser">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="veriftTitle"/>
+          <include name="loginpage"/>
+          <include name="InvokeBrowser"/>
+        </methods>
+      </class> <!-- TestNGpgm.guru99MultipleBrowser -->
+    </classes>
+  </test> <!-- classexecution1(failed) -->
+</suite> <!-- Failed suite [guru99new] -->

@@ -1,11 +1,15 @@
-	package mainmethods;
+	package TestNGpgm;
 	
-	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.chrome.ChromeDriver;
 	import org.testng.Assert;
 	import org.testng.annotations.AfterClass;
 	import org.testng.annotations.BeforeClass;
-	import org.testng.annotations.Test;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.beust.jcommander.Parameter;
 	
 	public class guru99Testng {
 	
@@ -50,4 +54,16 @@
 			Assert.assertEquals(actualTitle, expectedtiltle);
 		}
 	
+		
+		
+		@Parameters({"userid","password"})
+		@Test(priority=1000)
+		
+		public void loginpage(String userid,String password) {
+			
+			driver.findElement(By.name("uid")).sendKeys(userid);
+			driver.findElement(By.name("password")).sendKeys(password);
+			driver.findElement(By.name("btnLogin")).click();
+			
+		}
 	}

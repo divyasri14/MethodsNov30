@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="groupsdemoonsanity">
+  <test thread-count="5" name="SanityDemo">
+  <groups>
+  
+  <run>
+  <include name="Sanity"></include>
+  <include name="Regrssion"></include>
+  </run>
+  </groups>
+  
+  
+  
+ <classes>
+ <class name = "TestNGpgm.BasicTestNG"></class>
+ <class name = "TestNGpgm.BasicTestNG2"></class>
+ </classes>
+  </test> <!-- classexecution1 -->
+</suite> <!-- guru99new -->

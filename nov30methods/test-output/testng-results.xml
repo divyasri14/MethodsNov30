@@ -1,25 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45135" started-at="2018-12-23T12:16:09Z" finished-at="2018-12-23T12:16:54Z">
+  <suite name="multiplebrowse" duration-ms="175" started-at="2018-12-24T17:43:41Z" finished-at="2018-12-24T17:43:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45135" started-at="2018-12-23T12:16:09Z" finished-at="2018-12-23T12:16:54Z">
-      <class name="mainmethods.guru99Testng">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:mainmethods.guru99Testng@6d00a15d]" name="invokeBrowser" is-config="true" duration-ms="43744" started-at="2018-12-23T12:16:09Z" finished-at="2018-12-23T12:16:53Z">
+    <test name="MultipleBrowserTest" duration-ms="175" started-at="2018-12-24T17:43:41Z" finished-at="2018-12-24T17:43:41Z">
+      <class name="TestNGpgm.guru99MultipleBrowser">
+        <test-method status="FAIL" signature="InvokeBrowser(java.lang.String)[pri:0, instance:TestNGpgm.guru99MultipleBrowser@735b5592]" name="InvokeBrowser" is-config="true" duration-ms="0" started-at="2018-12-24T17:43:41Z" finished-at="2018-12-24T17:43:41Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserType' is required by BeforeClass on method InvokeBrowser but has not been marked @Optional or defined
+in C:\Users\ambikaraj\git\repository3\nov30methods\test-output\TestNgFile\multipleBrowser.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserType' is required by BeforeClass on method InvokeBrowser but has not been marked @Optional or defined
+in C:\Users\ambikaraj\git\repository3\nov30methods\test-output\TestNgFile\multipleBrowser.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="veriftTitle()[pri:0, instance:mainmethods.guru99Testng@6d00a15d]" name="veriftTitle" duration-ms="499" started-at="2018-12-23T12:16:53Z" finished-at="2018-12-23T12:16:54Z">
+        </test-method> <!-- InvokeBrowser -->
+        <test-method status="SKIP" signature="veriftTitle()[pri:0, instance:TestNGpgm.guru99MultipleBrowser@735b5592]" name="veriftTitle" duration-ms="0" started-at="2018-12-24T17:43:41Z" finished-at="2018-12-24T17:43:41Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserType' is required by BeforeClass on method InvokeBrowser but has not been marked @Optional or defined
+in C:\Users\ambikaraj\git\repository3\nov30methods\test-output\TestNgFile\multipleBrowser.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserType' is required by BeforeClass on method InvokeBrowser but has not been marked @Optional or defined
+in C:\Users\ambikaraj\git\repository3\nov30methods\test-output\TestNgFile\multipleBrowser.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- veriftTitle -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:mainmethods.guru99Testng@6d00a15d]" name="closeBrowser" is-config="true" duration-ms="798" started-at="2018-12-23T12:16:54Z" finished-at="2018-12-23T12:16:54Z">
+        <test-method status="SKIP" signature="loginpage(java.lang.String, java.lang.String)[pri:1000, instance:TestNGpgm.guru99MultipleBrowser@735b5592]" name="loginpage" duration-ms="0" started-at="2018-12-24T17:43:41Z" finished-at="2018-12-24T17:43:41Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserType' is required by BeforeClass on method InvokeBrowser but has not been marked @Optional or defined
+in C:\Users\ambikaraj\git\repository3\nov30methods\test-output\TestNgFile\multipleBrowser.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserType' is required by BeforeClass on method InvokeBrowser but has not been marked @Optional or defined
+in C:\Users\ambikaraj\git\repository3\nov30methods\test-output\TestNgFile\multipleBrowser.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpage -->
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:TestNGpgm.guru99MultipleBrowser@735b5592]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-12-24T17:43:41Z" finished-at="2018-12-24T17:43:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- mainmethods.guru99Testng -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- TestNGpgm.guru99MultipleBrowser -->
+    </test> <!-- MultipleBrowserTest -->
+  </suite> <!-- multiplebrowse -->
 </testng-results>
