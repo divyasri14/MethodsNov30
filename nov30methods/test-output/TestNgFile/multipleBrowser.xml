@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="multiplebrowse">
-  <test thread-count="5" name="MultipleBrowserTest">
+  <test thread-count="5" name="chromeBrowserTest" parallel="tests">
   
   <parameter name="browsertype" value="chrome"></parameter>
+   <parameter name="userid" value="mngr166186"></parameter>
+ 
+ <parameter name="password" value="tyredet"></parameter>
+ <classes>
+ <class name = "TestNGpgm.guru99MultipleBrowser"></class>
+ 
+ </classes>
+ </test>
+  <test thread-count="5" name="edgeBrowserTest">
+  
+  <parameter name="browsertype" value="edge"></parameter>
    <parameter name="userid" value="mngr166186"></parameter>
  
  <parameter name="password" value="tyredet"></parameter>

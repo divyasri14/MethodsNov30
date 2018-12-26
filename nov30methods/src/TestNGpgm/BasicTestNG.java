@@ -65,5 +65,20 @@ import org.testng.annotations.Test;
    }
    
    
+   @Test(expectedExceptions = ArrayIndexOutOfBoundsException.class)
+   public void testcase7() {
    
+   for (int i =0 ;i <=5;i++) {
+		
+		int[] arr = new int[5];
+		
+		arr[0] = 5;
+		arr[1] = 23;
+		arr[2] = 125;
+		arr[3] = 153;
+		arr[4] = 146546;	
+		
+		System.out.println(arr[i]);
+	}	
 	}
+}

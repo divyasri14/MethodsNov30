@@ -2,6 +2,7 @@ package mainmethods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Wait;
 
 public class windowHandling {
 
@@ -33,15 +34,17 @@ ChromeDriver driver;
 			driver.findElement(By.tagName("button")).click();
 			
 //This is for child window
-			String ChildWindow;
+			//String ChildWindow;
 			
-			ChildWindow=driver.getWindowHandles().toArray()[1].toString();
+		String	ChildWindow=driver.getWindowHandles().toArray()[1].toString();
 			
 			System.out.println(ChildWindow);	
 			
 			driver.switchTo().window(ChildWindow);
 			
-			System.out.println(driver.getTitle());	
+			
+			System.out.println(driver.getTitle());
+		
 			
 			
 			driver.close();

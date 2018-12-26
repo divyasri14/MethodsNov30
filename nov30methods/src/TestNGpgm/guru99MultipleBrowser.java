@@ -21,7 +21,7 @@ import com.beust.jcommander.Parameter;
 		 WebDriver driver;
 		 
 		 
-		@Parameters({"browserType"})
+		@Parameters({"browsertype"})
 		@BeforeClass
 	
 		
